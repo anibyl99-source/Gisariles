@@ -10,11 +10,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       background: radial-gradient(circle at center, #0d1b2a, #000);
       overflow: hidden;
       font-family: 'Segoe UI', sans-serif;
       color: white;
       text-align: center;
+      padding: 20px;
     }
 
     /* Botón */
@@ -29,6 +31,7 @@
       cursor: pointer;
       box-shadow: 0 0 10px rgba(249, 199, 79, 0.6);
       transition: transform 0.3s;
+      margin-bottom: 20px;
     }
     .btn:hover {
       transform: scale(1.05);
@@ -50,10 +53,10 @@
 
     /* Frase */
     .frase {
-      margin-top: 20px;
-      font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 600px;
+      margin-top: 30px;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      max-width: 650px;
       text-shadow: 0 0 6px rgba(255, 213, 74, 0.5);
     }
 
@@ -80,8 +83,8 @@
 
   <!-- Contenido del ramo -->
   <div id="ramo">
-    <!-- Ramo de girasoles estático -->
-    <svg width="200" height="200" viewBox="0 0 200 200">
+    <!-- Ramo de 6 girasoles estáticos -->
+    <svg width="320" height="320" viewBox="0 0 320 320">
       <defs>
         <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
           <stop offset="0%" stop-color="#3a2319"/>
@@ -89,28 +92,25 @@
         </radialGradient>
       </defs>
       
-      <!-- Girasol central -->
-      <g transform="translate(100,100)">
-        <circle r="35" fill="#f9c74f" stroke="#d4a017" stroke-width="3"/>
-        <circle r="18" fill="url(#centerGlow)"/>
-      </g>
-      
-      <!-- Girasoles alrededor -->
-      <g transform="translate(60,80)">
-        <circle r="30" fill="#f9c74f" stroke="#d4a017" stroke-width="2"/>
-        <circle r="15" fill="url(#centerGlow)"/>
-      </g>
-      <g transform="translate(140,80)">
-        <circle r="30" fill="#f9c74f" stroke="#d4a017" stroke-width="2"/>
-        <circle r="15" fill="url(#centerGlow)"/>
-      </g>
-      <g transform="translate(80,140)">
-        <circle r="28" fill="#f9c74f" stroke="#d4a017" stroke-width="2"/>
-        <circle r="14" fill="url(#centerGlow)"/>
-      </g>
-      <g transform="translate(120,140)">
-        <circle r="28" fill="#f9c74f" stroke="#d4a017" stroke-width="2"/>
-        <circle r="14" fill="url(#centerGlow)"/>
+      <!-- Girasoles (círculos grandes en disposición de ramo) -->
+      <g>
+        <circle cx="160" cy="100" r="45" fill="#f9c74f" stroke="#d4a017" stroke-width="3"/>
+        <circle cx="160" cy="100" r="22" fill="url(#centerGlow)"/>
+        
+        <circle cx="100" cy="140" r="45" fill="#f9c74f" stroke="#d4a017" stroke-width="3"/>
+        <circle cx="100" cy="140" r="22" fill="url(#centerGlow)"/>
+        
+        <circle cx="220" cy="140" r="45" fill="#f9c74f" stroke="#d4a017" stroke-width="3"/>
+        <circle cx="220" cy="140" r="22" fill="url(#centerGlow)"/>
+        
+        <circle cx="130" cy="200" r="45" fill="#f9c74f" stroke="#d4a017" stroke-width="3"/>
+        <circle cx="130" cy="200" r="22" fill="url(#centerGlow)"/>
+        
+        <circle cx="190" cy="200" r="45" fill="#f9c74f" stroke="#d4a017" stroke-width="3"/>
+        <circle cx="190" cy="200" r="22" fill="url(#centerGlow)"/>
+        
+        <circle cx="160" cy="260" r="45" fill="#f9c74f" stroke="#d4a017" stroke-width="3"/>
+        <circle cx="160" cy="260" r="22" fill="url(#centerGlow)"/>
       </g>
     </svg>
 
