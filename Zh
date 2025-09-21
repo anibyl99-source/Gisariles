@@ -91,7 +91,7 @@
   <button class="btn" onclick="mostrarRamo()">🌻 Abre aquí 🌻</button>
 
   <div id="ramo">
-    <img id="ramo-img" src="https://share.google/images/fkLPQZAhtdZPWedtJ" alt="Ramo de Girasoles">
+    <img id="ramo-img" src="https://ibb.co/5hbfVVGH" alt="Ramo de Girasoles">
 
     <div class="frase">
       🌻 Quiero dedicarte este ramo de girasoles porque me recuerdan a ti:  
