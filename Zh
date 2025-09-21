@@ -51,6 +51,16 @@
       to { opacity: 1; transform: scale(1); }
     }
 
+    /* Imagen del ramo */
+    #ramo-img {
+      max-width: 100%; /* Asegura que la imagen sea responsiva */
+      height: auto;
+      max-height: 350px; /* Limita la altura de la imagen */
+      margin-bottom: 20px; /* Espacio debajo de la imagen */
+      box-shadow: 0 0 20px rgba(249, 199, 79, 0.8); /* Borde luminoso */
+      border-radius: 10px; /* Bordes ligeramente redondeados */
+    }
+
     /* Frase */
     .frase {
       margin-top: 30px;
@@ -81,24 +91,7 @@
   <button class="btn" onclick="mostrarRamo()">🌻 Abre aquí 🌻</button>
 
   <div id="ramo">
-    <svg width="400" height="400" viewBox="0 0 400 400">
-      <defs>
-        <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#3a2319"/>
-          <stop offset="100%" stop-color="#5c3724"/>
-        </radialGradient>
-      </defs>
-      
-      <g transform="translate(200, 200)">
-        <polygon points="0,-120 20,-30 80,-80 30,0 80,80 20,30 0,120 -20,30 -80,80 -30,0 -80,-80 -20,-30" fill="#f9c74f" stroke="#d4a017" stroke-width="3"/>
-        <polygon points="0,-120 20,-30 80,-80 30,0 80,80 20,30 0,120 -20,30 -80,80 -30,0 -80,-80 -20,-30" fill="#f9c74f" stroke="#d4a017" stroke-width="3" transform="rotate(22.5)"/>
-        <polygon points="0,-120 20,-30 80,-80 30,0 80,80 20,30 0,120 -20,30 -80,80 -30,0 -80,-80 -20,-30" fill="#f9c74f" stroke="#d4a017" stroke-width="3" transform="rotate(45)"/>
-        <polygon points="0,-120 20,-30 80,-80 30,0 80,80 20,30 0,120 -20,30 -80,80 -30,0 -80,-80 -20,-30" fill="#f9c74f" stroke="#d4a017" stroke-width="3" transform="rotate(67.5)"/>
-        
-        <circle cx="0" cy="0" r="60" fill="url(#centerGlow)"/>
-        
-      </g>
-    </svg>
+    <img id="ramo-img" src="https://share.google/images/fkLPQZAhtdZPWedtJ" alt="Ramo de Girasoles">
 
     <div class="frase">
       🌻 Quiero dedicarte este ramo de girasoles porque me recuerdan a ti:  
